@@ -1,0 +1,302 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Контрольний талон</title>
+    <style type="text/css">
+        @page {
+            size: A4;
+            margin: 7mm;
+        }
+        .container {
+          margin-top: 0.3cm;
+          width: 18.8cm;
+          font-size: 12px;
+          line-height: 17px;
+          display: block;
+        }
+        .table,
+        .table tr,
+        .table td {
+          text-align: center;
+          border-collapse: collapse;
+          border: 1px solid black;
+          padding: 1.5mm;
+          vertical-align: top;
+        }
+        .td-1 {
+          width: 64mm;
+          min-width: 64mm;
+          max-width: 64mm;
+        }
+        .td-2 {
+          width: 64mm;
+          min-width: 64mm;
+          max-width: 64mm;
+        }
+        .td-3 {
+          width: 64mm;
+          min-width: 64mm;
+          max-width: 64mm;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+  <div style="text-align: center;"><b>Ордер на поселення у гуртожиток</b></div>
+
+  <div>&nbsp;</div>
+
+  <div>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <div style="display: inline-block; border-bottom: black 1px solid; width: 8.9cm; text-align: center;">Харків</div>
+      &nbsp;&nbsp;
+      <div style="display: inline-block; border-bottom: black 1px solid; width: 1.6cm;">&nbsp;</div>
+      &nbsp;&nbsp;
+      <div style="display: inline-block; border-bottom: black 1px solid; width: 4cm;">&nbsp;</div>
+      <div style="display: inline-block;">20</div>
+      <div style="display: inline-block; border-bottom: black 1px solid; width: 1cm;">&nbsp;</div>
+      <div style="display: inline-block;">року</div>
+  </div>
+
+  <div style="height: 0.5cm">
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <div style="line-height: 12px; display: inline-block; width: 8.93cm; text-align: center;">
+          (населений пункт)
+      </div>
+  </div>
+
+  <div style="padding-top: 0.1cm">
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <div style="display: inline-block; border-bottom: black 1px solid; width: 17.78cm; text-align: center;">
+        Харківський національний університет радіоелектроніки
+      </div>
+  </div>
+
+  <div style="height: 0.5cm">
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <div style="line-height: 12px; display: inline-block; width: 17.83cm; text-align: center;">
+          (найменування підприємства, установи, органу, який (яка, який) видає ордер)
+      </div>
+  </div>
+
+  <div>&nbsp;</div>
+
+  <div>
+      <div style="display: inline-block;">ОРДЕР на жилу площу в гуртожитку №8, серія</div>
+      <div style="display: inline-block; border-bottom: black 1px solid; width: 1.5cm; text-align: center;">{{ ser }}</div>
+      <div style="display: inline-block;">№</div>
+      <div style="display: inline-block; border-bottom: black 1px solid; width: 3.4cm; text-align: center;">{{ id }}</div>
+      <div style="display: inline-block;">.</div>
+  </div>
+
+  <div>&nbsp;</div>
+
+  <div>
+      <div style="display: inline-block;">Виданий</div>
+      <div style="display: inline-block; border-bottom: black 1px solid; width: 16.86cm; text-align: center;">{{ full_name }}</div>
+      <div style="display: inline-block;">.</div>
+  </div>
+
+  <div>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <div style="line-height: 12px; display: inline-block; width: 17.86cm; text-align: center;">
+          (прізвище, ім'я, по батькові)
+      </div>
+  </div>
+
+  <div>
+    який (яка) працює (навчається) у Харківському національному університеті радіоелектроніки.
+  </div>
+
+  <div>
+      <div style="display: inline-block;">факультет</div>
+      <div style="display: inline-block; border-bottom: black 1px solid; width: 16.66cm; text-align: center;">{{ facultet }}</div>
+      <div style="display: inline-block;">.</div>
+  </div>
+
+  <div>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <div style="line-height: 12px; display: inline-block; width: 17.6cm; text-align: center;">
+          (місце роботи, навчання)
+      </div>
+  </div>
+
+  <div>на право зайняття ліжкомісця в гуртожитку № 8</div>
+  <div>&nbsp;по просп. Людвига Свободи, буд. №51-Б,</div>
+  <div>&nbsp;кімната №{{ room }}</div>
+
+  <div>&nbsp;</div>
+
+  <div>
+      <div style="display: inline-block;">Ордер видано на підставі</div>
+      <div style="display: inline-block; border-bottom: black 1px solid; width: 14.2cm; text-align: center;">{{ reason_first_part }}</div>
+  </div>
+
+  <div>
+      <div style="display: inline-block; border-bottom: black 1px solid; width: 18.49cm; text-align: center;">{{ reason_second_part }}</div>
+  </div>
+
+  <div>
+      <div style="display: inline-block;">від</div>
+      &nbsp;&nbsp;
+      <div style="display: inline-block; border-bottom: black 1px solid; width: 1.2cm;">&nbsp;</div>
+      &nbsp;&nbsp;
+      <div style="display: inline-block; border-bottom: black 1px solid; width: 4cm;">&nbsp;</div>
+      <div style="display: inline-block;">20</div>
+      <div style="display: inline-block; border-bottom: black 1px solid; width: 1cm;">&nbsp;</div>
+      <div style="display: inline-block;">року</div>
+  </div>
+
+  <div>&nbsp;</div>
+
+  <div style="text-align: center;">СКЛАД СІМ'Ї</div>
+
+  <div>&nbsp;</div>
+
+  <table class="table">
+    <tr>
+      <td style="width: 1.1cm;">№ з/п</td>
+      <td style="width: 6cm;">&nbsp;&nbsp;&nbsp;&nbsp;Прізвище, ім'я, по батькові&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td>&nbsp;&nbsp;Рік народження&nbsp;&nbsp;</td>
+      <td>&nbsp;&nbsp;Родинні відносини з особою на ім'я якої видано ордер&nbsp;&nbsp;</td>
+    </tr>
+    <tr>
+      <td></td><td>{{ full_name }}</td><td>{{ birthday }}</td><td>&nbsp;</td>
+    </tr>
+  </table>
+
+  <div>&nbsp;</div>
+  <div>&nbsp;</div>
+
+  <div>
+    <div style="display: inline-block;">М.П.</div>
+    <div style="display: inline-block; width: 6cm;">&nbsp;</div>
+    <div style="display: inline-block;">Декан факультету</div>
+    <div style="display: inline-block; width: 2cm;">&nbsp;</div>
+    <div style="display: inline-block; border-top: black 1px solid; width: 6.6cm; text-align: center;">(підпис, ініціали)</div>
+  </div>
+
+  <div>&nbsp;</div>
+  <div>&nbsp;</div>
+
+  <div style="display: inline-block; border-bottom: black 2px solid; width: 100%;">&nbsp;</div>
+
+  <div style="text-align: center;">Цей ордер є підставою для вселення на надану жилу площу.</div>
+
+  <div>
+      <div style="display: inline-block; border-bottom: black 1px solid; width: 8.9cm; text-align: center;">Харків</div>
+      &nbsp;&nbsp;
+      <div style="display: inline-block; border-bottom: black 1px solid; width: 1.2cm;">&nbsp;</div>
+      &nbsp;&nbsp;
+      <div style="display: inline-block; border-bottom: black 1px solid; width: 4cm;">&nbsp;</div>
+      <div style="display: inline-block;">20</div>
+      <div style="display: inline-block; border-bottom: black 1px solid; width: 1cm;">&nbsp;</div>
+      <div style="display: inline-block;">року.</div>
+  </div>
+
+  <div style="height: 0.5cm">
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <div style="line-height: 12px; display: inline-block; width: 8.93cm; text-align: center;">
+          (населений пункт)
+      </div>
+  </div>
+
+  <div>
+      <div style="display: inline-block;">КОРІНЕЦЬ ОРДЕРА на жилу площу в гуртожитку №</div>
+      &nbsp;&nbsp;
+      <div style="display: inline-block; border-bottom: black 1px solid; width: 3cm; text-align: center;">{{ num }}</div>
+      <div style="display: inline-block;">,</div>
+      &nbsp;
+      <div style="display: inline-block;">серія</div>
+      <div style="display: inline-block; border-bottom: black 1px solid; width: 3.8cm; text-align: center;">{{ serial }}</div>
+      <div style="display: inline-block;">.</div>
+  </div>
+
+
+  <div>
+      <div style="display: inline-block;">Ордер видано</div>
+      <div style="display: inline-block; border-bottom: black 1px solid; width: 16.2cm; text-align: center;">{{ full_name }}</div>
+      <div style="display: inline-block;">,</div>
+  </div>
+
+  <div style="height: 0.5cm">
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <div style="line-height: 12px; display: inline-block; width: 16cm; text-align: center;">
+          (прізвище, ім'я, по батькові)
+      </div>
+  </div>
+
+  <div>
+      <div style="display: inline-block;">який (яка) працює (навчається) у Харківському національному університеті радіоелектроніки, ф-т:</div>
+  </div>
+
+  <div>
+      <div style="display: inline-block; border-bottom: black 1px solid; width: 18.7cm; text-align: center;">{{ facultet }}</div>
+  </div>
+
+  <div style="height: 0.5cm">
+      <div style="line-height: 12px; display: inline-block; width: 18.7cm; text-align: center;">
+          (місце роботи, навчання)
+      </div>
+  </div>
+
+
+  <div>на право зайняття ліжкомісця в гуртожитку № 8</div>
+  <div>&nbsp;по просп. Людвига Свободи, буд. №51-Б,</div>
+  <div>&nbsp;кімната №{{ room }}</div>
+
+  <div>&nbsp;</div>
+
+  <div>Ордер видано на підставі</div>
+
+  <div style="display: inline-block; border-bottom: black 2px solid; width: 100%;">&nbsp;</div>
+
+  <div>
+      <div style="display: inline-block;">від</div>
+      &nbsp;&nbsp;
+      <div style="display: inline-block; border-bottom: black 1px solid; width: 1.2cm;">&nbsp;</div>
+      &nbsp;&nbsp;
+      <div style="display: inline-block; border-bottom: black 1px solid; width: 4cm;">&nbsp;</div>
+      <div style="display: inline-block;">20</div>
+      <div style="display: inline-block; border-bottom: black 1px solid; width: 1cm;">&nbsp;</div>
+      <div style="display: inline-block;">року</div>
+  </div>
+
+  <div>&nbsp;</div>
+
+  <div>
+      <div style="display: inline-block;">Ордер одержав</div>
+      <div style="display: inline-block; border-bottom: black 1px solid; width: 7.5cm;text-align: center;">{{ full_name }}</div>
+      <div style="display: inline-block; width: 3cm;">&nbsp;</div>
+      <div style="display: inline-block; border-bottom: black 1px solid; width: 3.7cm;text-align: center;">&nbsp;</div>
+  </div>
+
+  <div style="height: 0.5cm">
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <div style="line-height: 12px; display: inline-block; width: 10cm; text-align: center;">
+          (прізвище, ініціали)
+      </div>
+      <div style="display: inline-block; width: 2.3cm;">&nbsp;</div>
+      <div style="line-height: 12px; display: inline-block; width: 3cm; text-align: center;">
+          (підпис)
+      </div>
+  </div>
+
+  <div>
+      <div style="display: inline-block;">від</div>
+      &nbsp;&nbsp;
+      <div style="display: inline-block; border-bottom: black 1px solid; width: 1.2cm;">&nbsp;</div>
+      &nbsp;&nbsp;
+      <div style="display: inline-block; border-bottom: black 1px solid; width: 4cm;">&nbsp;</div>
+      <div style="display: inline-block;">20</div>
+      <div style="display: inline-block; border-bottom: black 1px solid; width: 1cm;">&nbsp;</div>
+      <div style="display: inline-block;">року</div>
+  </div>
+
+</div>
+
+</body>
+</html>

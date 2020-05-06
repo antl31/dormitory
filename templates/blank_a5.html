@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Контрольний талон</title>
+    <style type="text/css">
+        @page {
+            size: A4;
+            margin: 5mm;
+        }
+        .container {
+          margin-top: 0.5cm;
+          font-family: "Gill Sans MT", "Gill Sans", "My Gill Sans", sans-serif;
+          font-size: 14.6px;
+          line-height: 20px;
+          display: inline-block;
+		  max-height: 13.2cm;
+        }
+        .table,
+        .table tr,
+        .table td {
+          border-collapse: collapse;
+          border: 1px solid black;
+          padding: 1.5mm;
+          vertical-align: top;
+        }
+        .td-1 {
+          width: 63mm;
+          min-width: 63mm;
+          max-width: 63mm;
+        }
+        .td-2 {
+          width: 63mm;
+          min-width: 63mm;
+          max-width: 63mm;
+        }
+        .td-3 {
+          width: 63mm;
+          min-width: 63mm;
+          max-width: 63mm;
+        }
+        .td-title {
+          width: '100%';
+          text-align: center;
+          display: block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+  <table class="table">
+    <tr>
+
+      <td class="td-1">
+          <span class="td-title" style="margin-bottom: 1mm;">ХНУРЕ</span>
+          <div>Контрольний талон</div>
+          <div>До ордеру №{{ order }}</div>
+          <div>&nbsp;</div>
+          <div>Студ.&nbsp;{{ full_name }}</div>
+          <div>Групи&nbsp;{{ group }}</div>
+          <div>Поселений в кімнату №{{ room }}</div>
+          <div>&nbsp;&nbsp;Гуртожиток №8</div>
+          <div>&nbsp;&nbsp;(просп. Л. Свободы, 51-Б)</div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;м.п. Зав.гурт.</div>
+          <div>&nbsp;_____________________________</div>
+          <div>З правилами внутрішнього</div>
+          <div>розпорядку в</div>
+          <div>студентському гуртожитку</div>
+          <div>ХНУРЕ ознайомлений і</div>
+          <div>забов'язуюсь виконувати</div>
+          <div>&nbsp;&nbsp;«___»________________20___р.</div>
+      </td>
+
+      <td class="td-2">
+          <span class="td-title" style="margin-bottom: 1mm;">ХНУРЕ</span>
+          <div>Ордер на поселення №{{ order }}</div>
+          <div>&nbsp;&nbsp;«___»________________20___р.</div>
+          <div>&nbsp;</div>
+          <div>Студ.&nbsp;{{ full_name }}</div>
+          <div>виданий ст. гр.&nbsp;{{ group }}</div>
+          <div>&nbsp;&nbsp;Гуртожиток №8</div>
+          <div>&nbsp;&nbsp;(просп. Л. Свободы, 51-Б)</div>
+          <div>&nbsp;&nbsp;Проживання до</div>
+          <div>&nbsp;&nbsp;«___»________________20___р.</div>
+          <div>&nbsp;&nbsp;Директор студмістечка</div>
+          <div>&nbsp;_____________________________</div>
+          <div>&nbsp;м.п.</div>
+          <div>Документи на реєстрацію</div>
+          <div>прийняті</div>
+          <div>&nbsp;&nbsp;«___»________________20___р.</div>
+          <div>&nbsp;&nbsp;Паспортистка</div>
+          <div>&nbsp;_____________________________</div>
+          <div>&nbsp;&nbsp;Декан факультету</div>
+          <div>&nbsp;_____________________________</div>
+          <div>&nbsp;м.п.</div>
+      </td>
+
+      <td class="td-3">
+        <span class="td-title" style="margin-bottom: 1mm;">ХНУРЕ</span>
+        <div>Продовжений до</div>
+        <div>&nbsp;&nbsp;«___»________________20___р.</div>
+        <div>&nbsp;м.п.</div>
+        <div>&nbsp;</div>
+        <div>Продовжений до</div>
+        <div>&nbsp;&nbsp;«___»________________20___р.</div>
+        <div>&nbsp;м.п.</div>
+        <div>&nbsp;</div>
+        <div>Продовжений до</div>
+        <div>&nbsp;&nbsp;«___»________________20___р.</div>
+        <div>&nbsp;м.п.</div>
+        <div>&nbsp;</div>
+        <div>Медогляд пройшов</div>
+        <div>&nbsp;&nbsp;«___»________________20___р.</div>
+        <div>&nbsp;</div>
+        <div>&nbsp;&nbsp;Медсестра</div>
+        <div>&nbsp;_____________________________</div>
+        <div>&nbsp;_____________________________</div>
+        <div>&nbsp;м.п.</div>
+      </td>
+
+    </tr>
+  </table>
+</div>
+
+</body>
+</html>
